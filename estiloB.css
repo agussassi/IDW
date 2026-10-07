@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(./assets/fonts/Open_Sans/OpenSans.ttf);
+    font-weight: 650;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans100";
+    src: url(./assets/fonts/Open_Sans/OpenSans.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans250";
+    src: url(./assets/fonts/Open_Sans/OpenSans.ttf);
+    font-weight: 450;
+    font-style: normal;
+}
+
+@media (max-width: 767px) {
+
+    footer .border-end {
+        border-right: none !important;
+        border-bottom: 1px solid #dee2e6 ;
+        padding-bottom: 15px;
+    }
+
+}
+
+:root {
+  /* Verdes principales */
+  --verde-base: #198754;
+  --verde-hover: rgba(60, 159, 81, 0.45);
+  --verde-medio: #3CA05A;
+  --verde-suave: #AEE5B1;
+  --verde-pastel: #E3F8E8;
+
+  /* Neutros recomendados */
+  --gris-body: #F5F7FA;
+  --gris-suave: #E8EEF2;
+  --gris-texto: #333333;
+}
+
+
+main h1{
+    font-family:"OpenSans100";
+}
+
+main h2{
+    font-family:"OpenSans100"
+}
+
+.nav-link:hover{
+    background-color: rgba(60, 159, 81, 0.45);
+    color: rgb(246, 238, 238);
+      
+}
+
+.nav-link{
+    border-radius: 1rem;
+}
+
+#sucursales{
+    background-color: #f4faf6;
+}
+
+.circulo-sucursal {
+    width: 130px;
+    height: 130px;
+
+    min-width: 130px;
+    min-height: 130px;
+
+    border-radius: 50%;
+
+    background-color: #198754;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease;
+}
+
+.circulo-sucursal:hover {
+    transform: scale(1.08);
+}
+
+.circulo-sucursal:hover{
+    transform: scale(1.08);
+}
+
+
+.btn-eliminar {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+
+    width: 20px;
+    height: 20px;
+
+    border:none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #198754;
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: white;
+    color: #dc3545;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+#nuevaSucursal { max-width: 350px; }
+
+@media (max-width: 576px) { #nuevaSucursal { width: 65% !important; } .circulo-sucursal { width: 120px; height: 120px; font-size: 15px; } }
+
